@@ -1,5 +1,5 @@
-import TopBar from "../TopBar";
-import PropTypes from "prop-types";
+import TopBar from '../TopBar'
+import PropTypes from 'prop-types'
 
 const Layout = ({ children }) => {
   return (
@@ -7,11 +7,11 @@ const Layout = ({ children }) => {
       <TopBar />
       <main>{children}</main>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
