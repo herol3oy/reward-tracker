@@ -1,0 +1,8 @@
+h1 {
+  transition: color 1s ease-in-out;
+  text-align: center;
+}
+
+h1:hover {
+  color: var(--secondary-dark-color);
+}
