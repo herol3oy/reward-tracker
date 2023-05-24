@@ -1,0 +1,6 @@
+p {
+  font-style: italic;
+  padding: 1rem;
+  background-color: var(--primary-light-color);
+  color: var(--primary-dark-color);
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "clientId": 1,
+    "amount": 120,
+    "date": "2023-04-01"
+  },
+  {
+    "clientId": 1,
+    "amount": 200,
+    "date": "2023-02-10"
+  },
+  {
+    "clientId": 2,
+    "amount": 120,
+    "date": "2023-05-05"
+  },
+  {
+    "clientId": 3,
+    "amount": 80,
+    "date": "2023-04-02"
+  },
+  {
+    "clientId": 4,
+    "amount": 90,
+    "date": "2023-05-10"
+  },
+  {
+    "clientId": 5,
+    "amount": 200,
+    "date": "2023-04-15"
+  },
+  {
+    "clientId": 2,
+    "amount": 150,
+    "date": "2023-04-18"
+  },
+  {
+    "clientId": 3,
+    "amount": 75,
+    "date": "2023-05-01"
+  },
+  {
+    "clientId": 4,
+    "amount": 80,
+    "date": "2023-05-15"
+  },
+  {
+    "clientId": 5,
+    "amount": 110,
+    "date": "2023-04-05"
+  },
+  {
+    "clientId": 3,
+    "amount": 130,
+    "date": "2023-05-20"
+  },
+  {
+    "clientId": 2,
+    "amount": 95,
+    "date": "2023-04-12"
+  },
+  {
+    "clientId": 5,
+    "amount": 70,
+    "date": "2023-05-08"
+  },
+  {
+    "clientId": 4,
+    "amount": 200,
+    "date": "2023-04-22"
+  },
+  {
+    "clientId": 3,
+    "amount": 150,
+    "date": "2023-05-12"
+  },
+  {
+    "clientId": 2,
+    "amount": 120,
+    "date": "2023-04-05"
+  },
+  {
+    "clientId": 4,
+    "amount": 160,
+    "date": "2023-04-08"
+  },
+  {
+    "clientId": 5,
+    "amount": 110,
+    "date": "2023-05-22"
+  }
+]
