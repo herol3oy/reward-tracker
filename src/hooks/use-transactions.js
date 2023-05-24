@@ -10,7 +10,7 @@ export const useTransactions = () => {
   useEffect(() => {
     const requestTransactions = async () => {
       try {
-        const json = fetchData(BASE_URL)
+        const json = await fetchData(BASE_URL)
         setTransactions(json)
       } catch (error) {
         setError(error)
