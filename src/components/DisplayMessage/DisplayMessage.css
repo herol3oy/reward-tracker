@@ -1,6 +1,12 @@
 p {
-  font-style: italic;
   padding: 1rem;
-  background-color: var(--primary-light-color);
   color: var(--primary-dark-color);
+}
+
+.display-message--info {
+  background-color: var(--info-color);
+}
+
+.display-message--danger {
+  background-color: var(--danger-color);
 }

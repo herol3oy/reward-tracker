@@ -2,14 +2,25 @@ import DisplayMessage from './components/DisplayMessage'
 import RewardTable from './components/RewardTable'
 import { useRewards } from './hooks/use-rewards'
 import { useTransactions } from './hooks/use-transactions'
-import { GETTING_DATA_ERROR, LOADING_DATA, NO_DATA } from './utils/constants'
+import { Messages } from './utils/messages'
+import { DisplayMessageType } from './utils/display-message-type'
 
 function App() {
   const { transactions, loading, error } = useTransactions()
   const { monthlyRewards, totalRewards } = useRewards(transactions)
 
-  if (loading) return <DisplayMessage>{LOADING_DATA}</DisplayMessage>
-  if (error) return <DisplayMessage>{GETTING_DATA_ERROR}</DisplayMessage>
+  if (loading)
+    return (
+      <DisplayMessage type={DisplayMessageType.INFO}>
+        {Messages.LOADING_DATA}
+      </DisplayMessage>
+    )
+  if (error)
+    return (
+      <DisplayMessage type={DisplayMessage.DANGER}>
+        {Messages.GETTING_DATA_ERROR}
+      </DisplayMessage>
+    )
 
   const hasMonthlyRewards = Object.keys(monthlyRewards).length
 
@@ -23,7 +34,9 @@ function App() {
       />
     ))
   ) : (
-    <DisplayMessage>{NO_DATA}</DisplayMessage>
+    <DisplayMessage type={DisplayMessageType.INFO}>
+      {Messages.NO_DATA}
+    </DisplayMessage>
   )
 }
 
