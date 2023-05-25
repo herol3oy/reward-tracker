@@ -1,5 +1,6 @@
 import DisplayMessage from 'components/DisplayMessage'
 import RewardTable from 'components/RewardTable'
+import RewardTableContainer from 'components/RewardTableContainer'
 import { useRewards } from 'hooks/use-rewards'
 import { useTransactions } from 'hooks/use-transactions'
 import { Messages } from 'utils/messages'
@@ -25,14 +26,16 @@ function App() {
   const hasMonthlyRewards = Object.keys(monthlyRewards).length
 
   return hasMonthlyRewards ? (
-    Object.keys(monthlyRewards).map((clientId) => (
-      <RewardTable
-        key={clientId}
-        clientId={clientId}
-        monthlyRewards={monthlyRewards[clientId]}
-        totalRewards={totalRewards[clientId]}
-      />
-    ))
+    <RewardTableContainer>
+      {Object.keys(monthlyRewards).map((clientId) => (
+        <RewardTable
+          key={clientId}
+          clientId={clientId}
+          monthlyRewards={monthlyRewards[clientId]}
+          totalRewards={totalRewards[clientId]}
+        />
+      ))}
+    </RewardTableContainer>
   ) : (
     <DisplayMessage type={DisplayMessageType.INFO}>
       {Messages.NO_DATA}
