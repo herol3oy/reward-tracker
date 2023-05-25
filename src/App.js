@@ -17,7 +17,7 @@ function App() {
     )
   if (error)
     return (
-      <DisplayMessage type={DisplayMessage.DANGER}>
+      <DisplayMessage type={DisplayMessageType.DANGER}>
         {Messages.GETTING_DATA_ERROR}
       </DisplayMessage>
     )
