@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { BASE_URL } from '../utils/base-url'
-import { fetchData } from '../utils/fetch-data'
+import { BASE_URL } from 'utils/base-url'
+import { fetchData } from 'utils/fetch-data'
 
 export const useTransactions = () => {
   const [transactions, setTransactions] = useState([])

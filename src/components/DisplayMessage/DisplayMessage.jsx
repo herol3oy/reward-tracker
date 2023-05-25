@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import './DisplayMessage.css'
-import { DisplayMessageType } from '../../utils/display-message-type'
+import { DisplayMessageType } from 'utils/display-message-type'
 
 const DisplayMessage = ({ children, type }) => {
   return (

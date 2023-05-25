@@ -1,9 +1,9 @@
-import DisplayMessage from './components/DisplayMessage'
-import RewardTable from './components/RewardTable'
-import { useRewards } from './hooks/use-rewards'
-import { useTransactions } from './hooks/use-transactions'
-import { Messages } from './utils/messages'
-import { DisplayMessageType } from './utils/display-message-type'
+import DisplayMessage from 'components/DisplayMessage'
+import RewardTable from 'components/RewardTable'
+import { useRewards } from 'hooks/use-rewards'
+import { useTransactions } from 'hooks/use-transactions'
+import { Messages } from 'utils/messages'
+import { DisplayMessageType } from 'utils/display-message-type'
 
 function App() {
   const { transactions, loading, error } = useTransactions()
