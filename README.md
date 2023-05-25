@@ -24,4 +24,4 @@ $ npm run build
 $ npm run test
 ```
 
-> Make sure to run the commands in the app roo directory where `package.json` is located.
+> Make sure to run the commands in the app root directory where `package.json` is located.
