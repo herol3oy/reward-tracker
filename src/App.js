@@ -3,8 +3,8 @@ import RewardTable from 'components/RewardTable'
 import RewardTableContainer from 'components/RewardTableContainer'
 import { useRewards } from 'hooks/use-rewards'
 import { useTransactions } from 'hooks/use-transactions'
-import { Messages } from 'utils/messages'
-import { DisplayMessageType } from 'utils/display-message-type'
+import { Messages } from 'constants/messages'
+import { DisplayMessageType } from 'constants/display-message-type'
 
 function App() {
   const { transactions, loading, error } = useTransactions()
