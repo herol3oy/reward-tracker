@@ -1,10 +1,13 @@
-export const calculatePoints = (amount) => {
-  let rewardPoints = 0
-  if (amount >= 100) {
-    rewardPoints = 2 * (amount - 100) + 50
+const UPPER_THRESHOLD = 100
+const LOWER_THRESHHOLD = 50
+const POINTS_PER_DOLLAR = 2
+const NO_POINTS = 0
+
+export const calculatePoints = (price) => {
+  if (price > UPPER_THRESHOLD) {
+    return POINTS_PER_DOLLAR * (price - UPPER_THRESHOLD) + LOWER_THRESHHOLD
+  } else if (price > LOWER_THRESHHOLD && price < UPPER_THRESHOLD) {
+    return price - LOWER_THRESHHOLD
   }
-  if (amount > 50 && amount <= 100) {
-    rewardPoints += amount - 50
-  }
-  return rewardPoints
+  return NO_POINTS
 }
